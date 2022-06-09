@@ -28,10 +28,9 @@ namespace TranslatorPlugin
                 return;
             foreach (var f in fields)
             {
-                if (f.title.EndsWith("en") && f.value.Trim() != "" && !Found.Contains(f.value.Trim()))
+                if (f.title.EndsWith("en") && f.value.Trim() != "")
                 {
-                    Found.Add(f.value.Trim());
-                    System.IO.File.AppendAllText("text.txt", f.value + "\r\n");
+                    Extract(f.value);
                 }
             }
         }
@@ -52,11 +51,7 @@ namespace TranslatorPlugin
                     ExtractTable(table2, walked);
                 if (kv.Value is LuaString str)
                 {
-                    if (!Found.Contains(str.Text.Trim()))
-                    {
-                        System.IO.File.AppendAllText("text.txt", str.Text + "\r\n");
-                        Found.Add(str.Text.Trim());
-                    }
+                    Extract(str.Text);
                 }
             }
             foreach (var v in table.List)
@@ -65,11 +60,7 @@ namespace TranslatorPlugin
                     ExtractTable(table2, walked);
                 if (v is LuaString str)
                 {
-                    if (!Found.Contains(str.Text.Trim()))
-                    {
-                        System.IO.File.AppendAllText("text.txt", str.Text + "\r\n");
-                        Found.Add(str.Text.Trim());
-                    }
+                    Extract(str.Text);
                 }
             }
         }
@@ -78,10 +69,11 @@ namespace TranslatorPlugin
         {
             if (txt == null)
                 return;
-            if (!Found.Contains(txt.Trim()))
+            var trimmed = txt.Trim();
+            if (Translator.IsUnknown(trimmed) && !Found.Contains(trimmed))
             {
                 System.IO.File.AppendAllText("text.txt", txt + "\r\n");
-                Found.Add(txt.Trim());
+                Found.Add(trimmed);
             }
         }
 
@@ -226,12 +218,13 @@ namespace TranslatorPlugin
                             foreach (var val in table)
                             //for (var i = 0; i < table.Count; i++)
                             {
-                                if (!Found.Contains(val.Value.Value.Trim()))
+                                Extract(val.Value.Value);
+                                /*if (!Found.Contains(val.Value.Value.Trim()))
                                 {
                                     
                                     System.IO.File.AppendAllText("text.txt", val.Value.Value + "\r\n");
                                     Found.Add(val.Value.Value.Trim());
-                                }
+                                }*/
                             }
                         }
                     }

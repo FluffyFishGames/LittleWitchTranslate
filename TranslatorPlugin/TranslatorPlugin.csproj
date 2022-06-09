@@ -54,6 +54,7 @@
     </Reference>
     <Reference Include="QuestMachine">
       <HintPath>G:\Games\Little Witch in the Woods\LWIW_Data\Managed\QuestMachine.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="SunnySideUp.Localization">
       <HintPath>G:\Games\Little Witch in the Woods\LWIW_Data\Managed\SunnySideUp.Localization.dll</HintPath>
@@ -73,6 +74,7 @@
     </Reference>
     <Reference Include="Unity.ResourceManager">
       <HintPath>G:\Games\Little Witch in the Woods\LWIW_Data\Managed\Unity.ResourceManager.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
       <HintPath>G:\Games\Little Witch in the Woods\LWIW_Data\Managed\Unity.TextMeshPro.dll</HintPath>

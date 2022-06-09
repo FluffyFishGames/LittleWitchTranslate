@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LittleWitchTranslate", "LittleWitchTranslate.csproj", "{37802C3F-2EAA-4128-A297-6D9098443CF2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TranslatorPlugin", "TranslatorPlugin\TranslatorPlugin.csproj", "{621B1B1D-21AA-403B-866A-062E2EC70228}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ModManagerGUI", "..\ModManagerGUI\ModManagerGUI.csproj", "{C9F1394C-5F57-4289-8037-C94CA4905CB5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		LinuxX64|Any CPU = LinuxX64|Any CPU
+		MacOS|Any CPU = MacOS|Any CPU
+		Release|Any CPU = Release|Any CPU
+		WindowsX64|Any CPU = WindowsX64|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{37802C3F-2EAA-4128-A297-6D9098443CF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37802C3F-2EAA-4128-A297-6D9098443CF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37802C3F-2EAA-4128-A297-6D9098443CF2}.LinuxX64|Any CPU.ActiveCfg = Release|Any CPU
+		{37802C3F-2EAA-4128-A297-6D9098443CF2}.LinuxX64|Any CPU.Build.0 = Release|Any CPU
+		{37802C3F-2EAA-4128-A297-6D9098443CF2}.MacOS|Any CPU.ActiveCfg = Release|Any CPU
+		{37802C3F-2EAA-4128-A297-6D9098443CF2}.MacOS|Any CPU.Build.0 = Release|Any CPU
+		{37802C3F-2EAA-4128-A297-6D9098443CF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37802C3F-2EAA-4128-A297-6D9098443CF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37802C3F-2EAA-4128-A297-6D9098443CF2}.WindowsX64|Any CPU.ActiveCfg = Release|Any CPU
+		{37802C3F-2EAA-4128-A297-6D9098443CF2}.WindowsX64|Any CPU.Build.0 = Release|Any CPU
+		{621B1B1D-21AA-403B-866A-062E2EC70228}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{621B1B1D-21AA-403B-866A-062E2EC70228}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{621B1B1D-21AA-403B-866A-062E2EC70228}.LinuxX64|Any CPU.ActiveCfg = Release|Any CPU
+		{621B1B1D-21AA-403B-866A-062E2EC70228}.LinuxX64|Any CPU.Build.0 = Release|Any CPU
+		{621B1B1D-21AA-403B-866A-062E2EC70228}.MacOS|Any CPU.ActiveCfg = Release|Any CPU
+		{621B1B1D-21AA-403B-866A-062E2EC70228}.MacOS|Any CPU.Build.0 = Release|Any CPU
+		{621B1B1D-21AA-403B-866A-062E2EC70228}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{621B1B1D-21AA-403B-866A-062E2EC70228}.Release|Any CPU.Build.0 = Release|Any CPU
+		{621B1B1D-21AA-403B-866A-062E2EC70228}.WindowsX64|Any CPU.ActiveCfg = Release|Any CPU
+		{621B1B1D-21AA-403B-866A-062E2EC70228}.WindowsX64|Any CPU.Build.0 = Release|Any CPU
+		{C9F1394C-5F57-4289-8037-C94CA4905CB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9F1394C-5F57-4289-8037-C94CA4905CB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9F1394C-5F57-4289-8037-C94CA4905CB5}.LinuxX64|Any CPU.ActiveCfg = LinuxX64|Any CPU
+		{C9F1394C-5F57-4289-8037-C94CA4905CB5}.LinuxX64|Any CPU.Build.0 = LinuxX64|Any CPU
+		{C9F1394C-5F57-4289-8037-C94CA4905CB5}.MacOS|Any CPU.ActiveCfg = MacOS|Any CPU
+		{C9F1394C-5F57-4289-8037-C94CA4905CB5}.MacOS|Any CPU.Build.0 = MacOS|Any CPU
+		{C9F1394C-5F57-4289-8037-C94CA4905CB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9F1394C-5F57-4289-8037-C94CA4905CB5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9F1394C-5F57-4289-8037-C94CA4905CB5}.WindowsX64|Any CPU.ActiveCfg = WindowsX64|Any CPU
+		{C9F1394C-5F57-4289-8037-C94CA4905CB5}.WindowsX64|Any CPU.Build.0 = WindowsX64|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {21DA1DDA-5425-4094-B5AD-2984836A8041}
+	EndGlobalSection
+EndGlobal
